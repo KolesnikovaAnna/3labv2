@@ -65,7 +65,7 @@ public class TransponTest
             System.out.print("\n");
         }
 
-        Foo a = new Foo(test);
+        Matr a = new Matr(test);
         a.start();
         ArrayList<ArrayList<Double>> result = a.getResult();
 

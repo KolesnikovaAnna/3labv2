@@ -27,25 +27,14 @@ class Transposing extends Thread
 }
 
 
-class Foo{
+class Matr{
 
     private ArrayList<ArrayList<Double>> matrix = new ArrayList<ArrayList<Double>>();
     private ArrayList<ArrayList<Double>> result = new ArrayList<ArrayList<Double>>();
     ArrayList<Transposing> threads;
 
-   public Foo(int a){
-//зайдем ли?
-       Random r = new Random();
-       r.nextDouble();
-       for(int i=0;i<a;i++) {
-           ArrayList<Double> temp = new ArrayList<Double>();
-           for (int j = 0; j < a; j++)
-               temp.add(r.nextDouble());
-           matrix.add(temp);
-       }
-   }
 
-    public Foo(ArrayList<ArrayList<Double>> matrix){
+    public Matr(ArrayList<ArrayList<Double>> matrix){
         this.matrix=matrix;
         int a = matrix.size();
         Random r = new Random();
